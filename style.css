@@ -4,6 +4,12 @@ body {
     padding: 10px;
     font-family: Arial, sans-serif;
 }
+#nav-ul {
+    display: flex;
+    gap: 20px;
+
+}
+
 
 #all-contents {
     max-width: 800px;
