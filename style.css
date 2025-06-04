@@ -1,3 +1,9 @@
+/* Portfolio website styles */
+.content h1 {
+color:#000000
+}
+
+
 body {
     background: rgb(0, 0, 0);
     color: rgb(45, 45, 45);
@@ -18,7 +24,7 @@ body {
 
 /* navigation menu */
 nav {
-    background: rgb(239, 80, 41);
+    background: rgb(221, 13, 13);
     margin: 0 auto;
     display: flex;
     padding: 10px;
@@ -27,7 +33,7 @@ nav {
 h1 {
     display: flex;
     align-items: center;
-    color: white;
+    color: rgb(0, 0, 0);
     flex: 1;
     margin: 0;
 }
@@ -46,7 +52,7 @@ h1 {
 
 a {
     text-decoration: none;
-    color: #fff;
+    color: #000000;
 }
 
 /* main container area beneath menu */
