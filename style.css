@@ -1,29 +1,94 @@
-/* Portfolio styles */
 body {
-    background-color: #f4f3f3;
+    background-color: #ffe5b4; /* Nice light color for the whole site */
+    margin: 0;
+    font-family: Arial, sans-serif;
 }
 
-
-.content h1 {
-    color: black
+#all-contents {
+    max-width: 900px;
+    margin: 30px auto;
+    background-color: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+    padding: 24px;
 }
+nav h1 {
+    color: #ef5029;
+    margin-bottom: 10px;
+}
+
+#nav-ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+}
+.nav-li a {
+    text-decoration: none;
+    color: #ef5029;
+    font-weight: bold;
+    padding: 6px 12px;
+    border-radius: 6px;
+    transition: background 0.2s;
+}
+
+.nav-li a:hover {
+    background: #ef5029;
+    color: #fff;
+}
+.sidebar {
+    float: left;
+    width: 220px;
+    margin-right: 24px;
+}
+
+.sidebar-img {
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: 16px;
+}
+
+.content {
+    overflow: hidden;
+}
+.content h1, .content h3 {
+    color: #ef5029;
+}
+
+.content ul {
+    background: #fff3e6;
+    border-radius: 8px;
+    padding: 15px;
+    margin-top: 10px;
+}
+
+.content li {
+    margin-bottom: 8px;
+    color: #333;
+}
+
+/* Portfolio styles */
+
+
+
 #portfolio {
   list-style-type: none;
   padding-left: 0;
 }
 
 #portfolio li {
-  background: #c7b9b9;
+  background: #22e14b;
   padding: 10px;
   border-radius: 10px;
   margin-bottom: 10px;
 }
 
 #portfolio li:hover {
-  background: #000000;
+  background: #f13535;
 }
 
 #portfolio a {
   text-decoration: none;
-  color: #000000;
+  color: #cf0f0f;
 }
