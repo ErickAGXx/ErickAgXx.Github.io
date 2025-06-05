@@ -1,5 +1,5 @@
 body {
-    background-color: #ffe5b4; /* Nice light color for the whole site */
+    background-color: #000000; /* Nice light color for the whole site */
     margin: 0;
     font-family: Arial, sans-serif;
 }
@@ -13,8 +13,13 @@ body {
     padding: 24px;
 }
 nav h1 {
-    color: #ef5029;
+    color: #ee1883;
     margin-bottom: 10px;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 #nav-ul {
@@ -23,10 +28,11 @@ nav h1 {
     margin: 0;
     display: flex;
     gap: 20px;
+    justify-content: flex-end;
 }
 .nav-li a {
     text-decoration: none;
-    color: #ef5029;
+    color: #000000;
     font-weight: bold;
     padding: 6px 12px;
     border-radius: 6px;
@@ -34,7 +40,7 @@ nav h1 {
 }
 
 .nav-li a:hover {
-    background: #ef5029;
+    background: #de1414;
     color: #fff;
 }
 .sidebar {
@@ -51,9 +57,10 @@ nav h1 {
 
 .content {
     overflow: hidden;
+    margin-left: 250px; 
 }
 .content h1, .content h3 {
-    color: #ef5029;
+    color: #000000;
 }
 
 .content ul {
@@ -78,17 +85,17 @@ nav h1 {
 }
 
 #portfolio li {
-  background: #22e14b;
+  background: #de168b;
   padding: 10px;
   border-radius: 10px;
   margin-bottom: 10px;
 }
 
 #portfolio li:hover {
-  background: #f13535;
+  background: #e81818;
 }
 
 #portfolio a {
   text-decoration: none;
-  color: #cf0f0f;
+  color: #000000;
 }
