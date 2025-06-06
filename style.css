@@ -2,6 +2,10 @@ body {
     background-color: #000000; /* Nice light color for the whole site */
     margin: 0;
     font-family: Arial, sans-serif;
+  background-image: url("https://cdnb.artstation.com/p/assets/images/images/031/188/853/large/jeff-nixon-underground-city.jpg?1602857564");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 #all-contents {
