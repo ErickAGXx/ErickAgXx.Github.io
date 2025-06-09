@@ -17,33 +17,11 @@ $(function () {
     }
 
     // Create walls - do not delete or modify this code
-    createPlatform(-50, -50, canvas.width + 100, 50); // top wall
-    createPlatform(-50, canvas.height - 10, canvas.width + 100, 200, "navy"); // bottom wall
-    createPlatform(-50, -50, 50, canvas.height + 500); // left wall
-    createPlatform(canvas.width, -50, 50, canvas.height + 100); // right wall
-
+    
 //THIS IS THE FINISH PLATFORMS RIGHT(END) TO LEFT(START)//
     
 // COMPLEX PLATFORM LEVEL 1 //
 // STARTING PLATFORM (top left corner)
-// CAGE PLATFORM (centered, floating)
-const cageX = 650, cageY = 250, cageW = 200, cageH = 100, wallT = 20;
-// Top
-createPlatform(cageX, cageY, cageW, wallT, "gray");
-// Bottom
-createPlatform(cageX, cageY + cageH, cageW, wallT, "gray");
-// Left
-createPlatform(cageX, cageY, wallT, cageH + wallT, "gray");
-// Right
-createPlatform(cageX + cageW - wallT, cageY, wallT, cageH + wallT, "gray");
-
-// STAIRCASE UP TO THE CAGE (from left side)
-let stairX = cageX - 120, stairY = cageY + cageH + 20;
-for (let i = 0; i < 6; i++) {
-  createPlatform(stairX + i * 25, stairY - i * 25, 40, 15, "brown");
-  createPlatform(500, 400, 100, 20, "red");
-}
-createPlatform
 
 
 
@@ -53,7 +31,9 @@ createPlatform
 
 
 
-//THS IS THE START PLATFORMS LEFT(START) TO RIGHT(END)//
+
+
+
 
     //////////////////////////////////
     // ONLY CHANGE BELOW THIS POINT //
@@ -64,8 +44,32 @@ createPlatform
 
 
     // TODO 2 - Create Platforms
+    createPlatform(0,560,800,20, "black");
+createPlatform(400,440,400,20, "black");
+createPlatform(0,320,180,20, "black");
+createPlatform(190,210,350,20, "black");
+createPlatform(600,320,180,30, "black");
+createPlatform(540,150,20,80, "black");
+createPlatform(600, 180, 60,20, "black");
+createPlatform(750, 120, 60, 20,"black");
+createPlatform(930, 50, 60, 20, "black");
+createPlatform(1200,220,800,20, "black");
+createPlatform(870,300,150,20, "black");
 
 
+
+
+
+//Audio effects//
+
+//when the player jumps, the jump sound plays
+//----> this sound is played
+let jumpSound = new Audio("sounds/jump.wav");
+function onPlayerJump() {
+  jumpSound.volume=1.0;
+  jumpSound.currentTime = 20;
+jumpSound.play();
+}
 
 
     // TODO 3 - Create Collectables
