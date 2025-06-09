@@ -17,6 +17,10 @@ $(function () {
     }
 
     // Create walls - do not delete or modify this code
+        createPlatform(0, 0, canvas.width, 20, "black"); // top
+    createPlatform(0, canvas.height - 20, canvas.width, 20, "black"); // bottom
+    createPlatform(0, 0, 20, canvas.height, "black"); // left
+    createPlatform(canvas.width - 20, 0, 20, canvas.height, "black"); // right
     
 //THIS IS THE FINISH PLATFORMS RIGHT(END) TO LEFT(START)//
     
@@ -60,16 +64,7 @@ createPlatform(870,300,150,20, "black");
 
 
 
-//Audio effects//
 
-//when the player jumps, the jump sound plays
-//----> this sound is played
-let jumpSound = new Audio("sounds/jump.wav");
-function onPlayerJump() {
-  jumpSound.volume=1.0;
-  jumpSound.currentTime = 20;
-jumpSound.play();
-}
 
 
     // TODO 3 - Create Collectables
@@ -81,7 +76,16 @@ jumpSound.play();
 
 
     
-    
+    //Audio effects//
+
+//when the player jumps, the jump sound plays
+//----> this sound is played
+let jumpSound = new Audio("sounds/jump.wav");
+function onPlayerJump() {
+  jumpSound.volume=1.0;
+  jumpSound.currentTime = 20;
+jumpSound.play();
+}
     //////////////////////////////////
     // ONLY CHANGE ABOVE THIS POINT //
     //////////////////////////////////
