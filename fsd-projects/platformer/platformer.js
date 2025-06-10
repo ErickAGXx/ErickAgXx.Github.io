@@ -36,9 +36,6 @@ $(function () {
 
 
 
-
-
-
     //////////////////////////////////
     // ONLY CHANGE BELOW THIS POINT //
     //////////////////////////////////
@@ -49,16 +46,19 @@ $(function () {
 
     // TODO 2 - Create Platforms
     createPlatform(0,560,800,20, "black");
-createPlatform(400,440,400,20, "black");
-createPlatform(0,320,180,20, "black");
-createPlatform(190,210,350,20, "black");
-createPlatform(600,320,180,30, "black");
-createPlatform(540,150,20,80, "black");
-createPlatform(600, 180, 60,20, "black");
-createPlatform(750, 120, 60, 20,"black");
-createPlatform(930, 50, 60, 20, "black");
+createPlatform(400,440,400,20, "black");    
+createPlatform(0,320,180,20, "black");      
+createPlatform(180,250,20,70,"black");      
+createPlatform(190,210,350,20, "black");   
+createPlatform(540,150,20,80, "black");     
+createPlatform(630,200,20,60, "black");     
+createPlatform(760,200,20,60, "black");     
+createPlatform(880,200,20,60, "black");      
+createPlatform(1000,350, 100,20, "black");
 createPlatform(1200,220,800,20, "black");
-createPlatform(870,300,150,20, "black");
+
+
+
 
 
 
