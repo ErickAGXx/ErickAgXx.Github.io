@@ -45,21 +45,13 @@ $(function () {
 
 
     // TODO 2 - Create Platforms
-    createPlatform(0,560,800,20, "black");
-createPlatform(400,440,400,20, "black");    
-createPlatform(0,320,180,20, "black");      
-createPlatform(180,250,20,70,"black");      
-createPlatform(190,210,350,20, "black");   
-createPlatform(540,150,20,80, "black");     
-createPlatform(630,200,20,60, "black");     
-createPlatform(760,200,20,60, "black");     
-createPlatform(880,200,20,60, "black");      
-createPlatform(1000,350, 100,20, "black");
-createPlatform(1200,220,800,20, "black");
+     createPlatform(0, 560, 120, 20, "black");      // Start platform (bottom left)
+    createPlatform(130, 510, 80, 20, "black");     // First jump, closer and a bit higher
 
-
-
-
+    createPlatform(40, 440, 80, 20, "black");      // Second jump, spaced left and up
+    createPlatform(200, 370, 80, 20, "black");     // Third jump, spaced right and up
+    createPlatform(70, 300, 80, 20, "black");      // Fourth jump, spaced left and up
+    createPlatform(220, 220, 80, 20, "black");  //Fifth jump,
 
 
 
