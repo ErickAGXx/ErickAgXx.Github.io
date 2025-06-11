@@ -1,3 +1,5 @@
+
+
 $(function () {
   // initialize canvas and context when able to
   canvas = document.getElementById("canvas");
@@ -45,11 +47,6 @@ $(function () {
 
 
     // TODO 2 - Create Platforms
- // ...existing code...
-
-    // TODO 2 - Create Platforms
-// ...existing code...
-
     // Bottom floor (start)
     createPlatform(20, 540, 120, 20, "black");
 
@@ -70,42 +67,23 @@ createPlatform(260, 420, 40, 20, "black"); //  step 3
     // 5th floor (top left, goal)
     createPlatform(20, 80, 120, 20, "black");
 
-    // Optional: Add a small platform in the middle for a collectable or a breather
+   
     createPlatform(350, 300, 60, 20, "black");
-
-// ...existing code...
-    
-
-    
-
-    
-
-    
-
-    
-
 
 
 
     // TODO 3 - Create Collectables
+createCollectable("steve", 370, 270, 6, 0.7); 
+createCollectable("steve", 50, 500, 6, 0.7);
 
 
 
     
     // TODO 4 - Create Cannons
-
-
+createCannon(700, 400, 0.5, 0.5, "right", 1000, 2000); // Right cannon
+createCannon(100,200, 0.5, 0.5, "left", 1000,2000); //  Leftcannon
     
-    //Audio effects//
-
-//when the player jumps, the jump sound plays
-//----> this sound is played
-let jumpSound = new Audio("sounds/jump.wav");
-function onPlayerJump() {
-  jumpSound.volume=1.0;
-  jumpSound.currentTime = 20;
-jumpSound.play();
-}
+   
     //////////////////////////////////
     // ONLY CHANGE ABOVE THIS POINT //
     //////////////////////////////////
