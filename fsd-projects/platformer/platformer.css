@@ -10,3 +10,10 @@ canvas {
 img {
   display: none;
 }
+body {
+    background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/d3ff6ba6-07e4-4e6e-bd48-92a4873d8b57/dg0nx4f-a92464fe-b824-4e50-b77c-8fa696537575.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2QzZmY2YmE2LTA3ZTQtNGU2ZS1iZDQ4LTkyYTQ4NzNkOGI1N1wvZGcwbng0Zi1hOTI0NjRmZS1iODI0LTRlNTAtYjc3Yy04ZmE2OTY1Mzc1NzUuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.wAJz_jPsN3bFZlMdWh4JtHGsc92mufT3NDhgSQ9t1ZY");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /* ...other styles... */
+}

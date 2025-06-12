@@ -43,45 +43,45 @@ $(function () {
     //////////////////////////////////
 
     // TODO 1 - Enable the Grid
-  toggleGrid();
+  
 
 
     // TODO 2 - Create Platforms
     // Bottom floor (start)
-    createPlatform(20, 540, 120, 20, "black");
+    createPlatform(20, 540, 120, 20, "red");
 
     // 2nd floor (right side)
-    createPlatform(600, 440, 180, 20, "black");
-    createPlatform(700, 360, 20, 80, "black"); // short "ladder" up
+    createPlatform(600, 440, 180, 20, "red");
+    createPlatform(700, 360, 20, 80, "red"); // short "ladder" up
 
     // 3rd floor (left side)
-    createPlatform(20, 340, 180, 20, "black");
-    createPlatform(120, 260, 20, 80, "black"); // short "ladder" up
-createPlatform(160, 500, 40, 20, "black"); // Step 1
-createPlatform(210, 460, 40, 20, "black"); // Step 2
-createPlatform(260, 420, 40, 20, "black"); //  step 3
+    createPlatform(20, 340, 180, 20, "red");
+    createPlatform(120, 260, 20, 80, "red"); // short "ladder" up
+createPlatform(160, 500, 40, 20, "red"); // Step 1
+createPlatform(210, 460, 40, 20, "red"); // Step 2
+createPlatform(260, 420, 40, 20, "red"); //  step 3
     // 4th floor (right side)
-    createPlatform(600, 240, 180, 20, "black");
-    createPlatform(700, 160, 20, 80, "black"); // short "ladder" up
+    createPlatform(600, 240, 180, 20, "red");
+    createPlatform(700, 160, 20, 80, "red"); // short "ladder" up
 
     // 5th floor (top left, goal)
-    createPlatform(20, 80, 120, 20, "black");
+    createPlatform(20, 80, 120, 20, "red");
 
    
-    createPlatform(350, 300, 60, 20, "black");
+    createPlatform(350, 300, 60, 20, "red");
 
 
 
     // TODO 3 - Create Collectables
 createCollectable("steve", 370, 270, 6, 0.7); 
 createCollectable("steve", 50, 500, 6, 0.7);
-
+createCollectable("steve", 700, 500, 6, 0.7);
 
 
     
     // TODO 4 - Create Cannons
-createCannon(700, 400, 0.5, 0.5, "right", 1000, 2000); // Right cannon
-createCannon(100,200, 0.5, 0.5, "left", 1000,2000); //  Leftcannon
+createCannon("top", 400, 100);
+createCannon("bottom", 500, 100);
     
    
     //////////////////////////////////
