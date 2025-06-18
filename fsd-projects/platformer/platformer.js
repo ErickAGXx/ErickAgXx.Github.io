@@ -32,12 +32,6 @@ $(function () {
 
 
 
-
-
-
-
-
-
     //////////////////////////////////
     // ONLY CHANGE BELOW THIS POINT //
     //////////////////////////////////
@@ -48,28 +42,32 @@ $(function () {
 
     // TODO 2 - Create Platforms
     // Bottom floor (start)
-    createPlatform(20, 540, 120, 20, "red");
+    createPlatform(20, 540, 120, 20, "white");
 
     // 2nd floor (right side)
-    createPlatform(600, 440, 180, 20, "red");
-    createPlatform(700, 360, 20, 80, "red"); // short "ladder" up
+    createPlatform(600, 440, 180, 20, "white");
+    createPlatform(700, 360, 20, 80, "white"); // short "ladder" up
 
     // 3rd floor (left side)
-    createPlatform(20, 340, 180, 20, "red");
-    createPlatform(120, 260, 20, 80, "red"); // short "ladder" up
-createPlatform(160, 500, 40, 20, "red"); // Step 1
-createPlatform(210, 460, 40, 20, "red"); // Step 2
-createPlatform(260, 420, 40, 20, "red"); //  step 3
+    createPlatform(20, 340, 180, 20, "white");
+    createPlatform(120, 260, 20, 80, "white"); // short "ladder" up
+createPlatform(160, 500, 40, 20, "white"); 
+createPlatform(210, 460, 40, 20, "white"); 
+createPlatform(260, 420, 40, 20, "white"); 
     // 4th floor (right side)
-    createPlatform(600, 240, 180, 20, "red");
+    createPlatform(600, 240, 180, 20, "white");
     createPlatform(700, 160, 20, 80, "red"); // short "ladder" up
 
     // 5th floor (top left, goal)
-    createPlatform(20, 80, 120, 20, "red");
+    createPlatform(20, 80, 120, 20, "white");
 
-   
-    createPlatform(350, 300, 60, 20, "red");
-
+    createPlatform(350, 300, 60, 20, "white");
+createPlatform(700, 520, 80, 20, "white");
+createPlatform(780, 1000, 60, 20, "white");
+createPlatform(700, 1260, 60, 20, "white");
+createPlatform(500, 1000, 60, 20, "white");
+createPlatform(500, 800, 60, 20, "white");
+createPlatform(10,1000, 60, 20, "white");
 
 
     // TODO 3 - Create Collectables
@@ -80,8 +78,13 @@ createCollectable("steve", 700, 500, 6, 0.7);
 
     
     // TODO 4 - Create Cannons
-createCannon("top", 400, 100);
-createCannon("bottom", 500, 100);
+createCannon("top", 500, 700);
+createCannon("bottom", 700, 800);
+createCannon("right", 800,20)
+createCannon("left" , 20, 20);
+function resetGame() {
+  setup(); 
+}
     
    
     //////////////////////////////////
