@@ -31,15 +31,20 @@
 <body class="board">
 	<!-- HTML for the box -->
 	<div class="box">?</div> 
-
+	
+    
 	
 	
  
 	<script>
-		(function  () {
-			moveBoxTo(300);
 		
-			'use strict'
+		(function  () {
+			
+		
+			'use strict';
+			var boardWidth = 600;
+			var boxWidth = 70;
+	
 			
 		
 			/* global jQuery */
@@ -82,8 +87,8 @@
 			turn it around! 
 			*/
 			function update() {
-
-
+				moveBoxTo(600);
+                 var newPositionX = 10;
 			};
 
 			/* 
