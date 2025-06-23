@@ -38,7 +38,7 @@
  
 	<script>
 		
-		(function  () {
+		(function () {
 			
 		
 			'use strict';
@@ -78,13 +78,18 @@
 			//////////////////////////////////////////////////////////////////
 
 			// TODO 2 - Variable declarations 
-var positionX = 0;
+var positionX = 10;
 var points = 0;
+var speed = 10;
+var direction = 1;
 
 function update() {
-positionX = positionX + 20;
+positionX = positionX + speed * direction;
 moveBoxTo(positionX);
-
+   if (positionX + boxWidth >= boardWidth || positionX <= 0) {
+            direction = direction * -1;
+        }
+moveBoxTo(positionX);
 
 }
 
@@ -102,10 +107,14 @@ moveBoxTo(positionX);
 			the left side of the screen.
 			*/
 		function handleBoxClick() {
-	positionX = 0;
-	points = points + 1;
+		points = points + 1;	
+	speed = speed + 2;
+	 positionX = 0;
+        direction = 1;
 	moveBoxTo(positionX);   
+
 	changeBoxText(points);    
+
 }
 
 
